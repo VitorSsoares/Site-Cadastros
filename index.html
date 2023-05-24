@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="style.css">
+   <title>Cadastro de Devs</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="titulo">Cadastro de Devs</h2>
+      <hr />
+
+      <p>Dados para Cadastro:</p>
+
+      <form class="form1">
+        <div>
+          <label for="fullname">Nome completo:</label>
+          <input type="text" name="fullname" id="fullname" /><br />
+          <label for="year">Data de nascimento:</label>
+          <input type="date" name="year" id="year" /><br />
+
+          <label for="email"> Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="text@text.com"
+          />
+          <br />
+
+          <label for="cel">Celular:</label>
+          <input
+            type="text"
+            name="cel"
+            id="cel"
+            placeholder="(xx)x xxxx-xxxx"
+          />
+        </div>
+      </form>
+      <br /><br />
+
+      <div class="domi">
+        <label id="main"> <strong>Qual sua dominação:</strong></label
+        ><br />
+
+        <label for="main1"">Front-End</label>
+        <input type="radio" name="main" id="front" checked /><br />
+        <label for="main2">Back-End</label>
+        <input type="radio" name="main" id="backEnd" /> <br />
+        <label for="main3">Full-Stack</label>
+        <input type="radio" name="main" id="fullStack" />
+      </div>
+      <br />
+      <div class="nivel">
+        <label><strong>Qual seu nível:</strong></label>
+        <select name="senioridade" id="senioridade">
+          <option selected disabled value="">Selecione</option>
+          <option value="Junior">Junior</option>
+          <option value="Pleno">Pleno</option>
+          <option value="Senior">Senior</option>
+        </select>
+      </div>
+      <br />
+      <form>
+        <div class="check">
+          <label id="dominacao"><strong>Principais Dominações:</strong></label
+          ><br />
+
+          <label for="cSs">CSS</label>
+          <input type="checkbox" name="dominacao" id="cSs" />
+          <label for="htM">HTML</label>
+          <input type="checkbox" name="dominacao" id="htM" />
+          <label for="js">JavaScript</label>
+          <input type="checkbox" name="dominacao" id="js" />
+          <label for="ts">TypeScript</label>
+          <input type="checkbox" name="ts" id="ts" />
+          <label for="ph">PHP</label>
+          <input type="checkbox" name="ph" id="ph" />
+          <label for="pyt">Python</label>
+          <input type="checkbox" name="pyt" id="pyt" />
+        </div>
+      </form>
+      <br /><br />
+
+      <div>
+        <label id="caixa"><strong>Escreva um pouco sobre você:</strong></label>
+        <br />
+        <textarea
+          name="caixa"
+          id="box"
+          cols="30"
+          rows="6"
+          placeholder="Projetos, Hobbies..."
+        ></textarea>
+      </div>
+      <button type="submit">Finalizar </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
